@@ -1,0 +1,768 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(20, 20, 82)
+}
+
+button{
+    all: unset;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: orangered;
+    color: white;
+    font-size: 12px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 120px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav li{
+    margin: 0px 20px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 120px;
+}
+
+main div{
+    width: 40%;
+}
+
+main img{
+    width: 50%;
+}
+
+main h1{
+    font-size: 50px;
+    color: rgb(20, 20, 82);
+    font-weight: 600;
+}
+
+main p{
+    font-size: 20px;
+    color: gray;
+    margin: 20px 0;
+}
+
+#about-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    padding: 0px 120px;
+}
+
+.about1 h1{
+    font-size: 40px;
+    margin: 0px 150px 20px 0px;
+    color: rgb(20, 20, 82);
+}
+
+.about1 p{
+    font-size: 20px;
+    margin: 0px 100px 40px 0px;
+    color: gray;
+}
+
+.about2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about2 ul{
+    list-style: none;
+}
+
+.about2 h3{
+    color: rgb(20, 20, 82);
+    font-size: 20px;
+    margin: 20px 0px 20px 20px;
+}
+
+.about2 p{
+    font-size: 20px;
+    color: gray;
+    margin: 5px 0px 30px 100px;
+}
+
+.about2 h4{
+    border-radius: 100px;
+    background-color: orangered;
+    padding: 10px 22px;
+    color: white;
+    font-size: 15px;
+}
+
+.about2 div{
+    display: flex;
+    align-items: center;
+}
+
+#response-section{
+    margin-top: 5rem;
+}
+
+#response-section h1{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(8, 8, 72);
+}
+
+#response-section img{
+    width: 20%;
+    margin: 0 auto -50px;
+}
+
+.feedbacks{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial{
+    text-align: center;
+}
+
+.button{
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.li h3, .watts h3, .Ali h3{
+    color: hsl(228, 39%, 23%);
+}
+.li, .watts, .Ali{
+    color: hsl(227, 12%, 61%);
+    background-color: #FAFAFA;
+    padding: 50px 20px 20px;
+    border-radius: 10px;
+}
+
+.li p{
+    padding: 10px;
+}
+
+
+#team{
+    background-color: #E85E38;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 120px 40px 30px;
+}
+
+#team h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding: 0px 0px 10px 100px;
+}
+#team button{
+    background-color: white;
+    color: #E85E38;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D1E25;
+    color: white;
+    padding: 50px 80px 70px 130px;
+}
+
+.icon{
+    color: white;
+}
+
+.icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0px 0px 0px;
+    list-style: none;
+}
+
+.icon2{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.icon2 a{
+    color: white;
+    font-size: 15px;
+    line-height: 10px;
+}
+
+.icon2 ul{
+    list-style: none;
+}
+
+.icon2 li{
+    padding: 15px;
+    font-size: 12px;
+}
+
+.icon3 p{
+    font-size: 12px;
+    margin-top: 70px;
+}
+
+.icon3 input{
+    border-radius: 25px;
+    padding: 12px 15px;
+    color: gray;
+    font-size: 15px;
+    
+}
+
+.owl-nav{
+    display: none;
+}
+
+
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.owl-dot{
+    margin: 10px;
+    padding: 5px;
+    background-color: #8d8d8d;
+    border-radius: 50%;
+}
+
+.owl-dot.active{
+    background-color: #E85E38;
+}
+
+@media screen and (max-width:992px) {
+    nav, main, #about-section, footer, .feedbacks{
+
+        padding: 40px;
+    }
+
+    nav li{
+        margin: 0px 10px;
+    }
+
+    main h1{
+        font-size: 30px;
+    }
+
+    main p{
+        font-size: 18px;
+    }
+
+    .about1 h1{
+        font-size: 25px;
+    }
+
+    .about1 p{
+        font-size: 18px;
+    }
+
+    .about2 h3{
+        font-size:15px;
+        margin-bottom:15px;
+    }
+
+    .about2 h4{
+        font-size: 10px;
+    }
+
+    .about2 p{
+        font-size: 15px;
+        margin-bottom: 15px;
+        margin-left: 75px;
+    }
+
+    #respose-section{
+
+        margin-top:20px;
+    }
+
+    #response-section h1{
+        font-size: 30px;
+    }
+
+
+    #team{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #team h1{
+        padding-left:20px;
+        font-size: 30px;
+    }
+
+    .icon2{
+        gap: 0px;
+    }
+
+    .icon2 a{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    nav, main, #about-section, footer, .feedbacks{
+        padding: 25px;
+    }
+
+    nav img{
+        width:90%;
+    }
+
+    nav button{
+        padding: 10px 15px;
+        font-size: 8px;
+    }
+
+    nav li{
+        margin: 0px 10px;
+        font-size: 13px;
+    }
+
+    main h1{
+        font-size: 25px;
+    }
+
+    main p{
+        font-size: 15px;
+    }
+
+    .about1 h1{
+        font-size: 20px;
+        margin: 0 0 20px;
+    }
+
+    .about1 p{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .about1 p{
+        font-size: 12px;
+    }
+
+    .about2 h3{
+        font-size: 12px;
+    }
+
+    .about2 h4{
+        padding: 10px 15px;
+    }
+
+    .about2 p{
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-left: 60px;
+    }
+
+    #response-section{
+        margin-top: 40px;
+    }
+
+    #response-section h1{
+        font-size: 25px;
+    }
+
+
+    .li h3, .watts h3, .Ali h3{
+        font-size: 15px;
+    }
+
+    .li p, .watts p, .Ali p{
+        font-size: 13px;
+    }
+
+    .button{
+        margin-bottom: 80px;
+    }
+
+    #team h1{
+        font-size: 25px;
+    }
+
+    footer img{
+        width: 70%;
+    }
+
+    .icon2 li{
+        padding: 10px;
+    }
+
+    .icon2 a{
+        font-size: 10px;
+    }
+
+    .icon3 input{
+        font-size: 10px;
+    }
+
+    .icon3 button{
+        font-size: 10px;
+        padding: 12px 25px;
+    }
+    .icon3 p{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:576px){
+    nav, main, #about-section, footer, .feedbacks{
+        padding: 12px;
+    }
+
+    nav img{
+        width:80%;
+    }
+
+    nav li{
+        font-size: 10px;
+    }
+
+    main h1{
+        font-size: 20px;
+    }
+
+    main p{
+        font-size: 12px;
+    }
+
+    main button{
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    #about-section{
+        gap: 20px;
+    }
+
+    #response-section h1{
+        font-size: 20px;
+    }
+
+    #response-section img{
+        width: 15%;
+    }
+
+    .li h3, .watts h3, .Ali h3{
+        font-size: 12px;
+    }
+
+    .li p, .watts p, .Ali p{
+        font-size: 12px;
+    }
+
+    #response-section button{
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+
+    #team h1{
+        font-size: 20px;
+    }
+
+    #team button{
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    .icon2 li{
+        padding: 12px 8px;
+    }
+
+    .icon3 button{
+        padding: 10px 15px;
+    }
+
+    .icon3 input{
+        padding: 10px 15px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    nav, main, #about-section, footer, .feedbacks{
+        padding: 10px;
+    
+    }
+
+    main h1{
+        font-size: 15px;
+    }
+    
+    main p {
+        font-size: 10px;
+    }
+
+    main button{
+        font-size: 10px;
+    }
+
+    #about-section{
+        gap: 5px;
+    }
+
+    .about1 h1{
+        font-size: 15px;
+    }
+
+    .about1 p{
+        font-size: 10px;
+    }
+
+    .about2 h3{
+        font-size: 10px;
+    }
+
+    .about2 h4{
+        font-size: 8px;
+        padding: 8px 12px;
+    }
+
+    .about2 p{
+        font-size: 10px;
+        margin-left: 52px;
+        margin-bottom: 1px;
+    }
+
+    #response-section h1{
+        font-size: 15px;
+    }
+
+    .li h3, .watts h3, .Ali h3{
+        font-size: 10px;
+    }
+
+    .li p, .watts p, .Ali p{
+        font-size: 10px;
+    }
+
+    #team h1{
+        font-size: 15px;
+    }
+
+    .icon2 li{
+        padding: 10px 6px;
+    }
+
+    .icon2 a{
+        font-size: 8px;
+    }
+
+    .icon3 input{
+        padding: 8px;
+    }
+
+    .icon3 button{
+        padding: 8px;
+    }
+
+}
+
+@media screen and (max-width:375px){
+    nav, main, #about-section, footer, .feedbacks{
+        padding: 7px;
+    
+    }
+
+    nav button{
+        padding: 5px 10px;
+    }
+
+    nav a{
+        font-size: 5px;
+    }
+    nav img{
+        width: 60%;
+    }
+
+    main{
+        text-align: center;
+        flex-direction: column-reverse;
+        margin-bottom: 4rem;
+    }
+
+     main h1{
+        font-size: 25px;
+    }  
+
+    main p{
+        font-size: 15px;
+        margin: 10px 0
+    }
+
+    main div, main img{
+        width: 80%;
+    }
+
+    main button{
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    #about-section{
+        gap: 0px;
+        grid-template-columns: 1fr;
+    }
+
+    #about-section .about1{
+        text-align: center;
+        padding: 0 20px 2rem;
+    } 
+
+    .about1 h1{
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .about1 p{
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .about2 h4{
+        font-size: 12px;
+        padding: 10px 19px;
+        margin-right: 10px;
+    }
+
+    .about2 h3{
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .about2 ul li p{
+        font-size: 14px;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .about2 ul li:nth-child(2){
+        margin: 30px 0;
+    }
+
+    .about2 div{
+        background-color: #FCEFEA;
+    }
+
+    #response-section{
+        margin: 70px 0px;
+    }
+
+    #response-section img{
+        width: 30%;
+    }
+
+    #response-section h1{
+        font-size: 20px;
+    }
+
+    #response-section button{
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    .li h3, .watts h3, .Ali h3{
+        font-size: 13px;
+    }
+
+    .li p, .watts p, .Ali p{
+        font-size: 12px;
+    }
+
+    .button{
+        margin-bottom: 50px;
+    }
+
+    #team{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #team h1{
+        font-size: 21px;
+        padding: 0;
+    }
+
+    #team button{
+        font-size: 10px;
+        padding: 10px 15px;
+        margin-top: 20px;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+    }
+
+    .icon3 input{
+        padding: 15px 20px;
+        margin: 20px 0px;
+        font-size: 15px;
+    }
+
+    .icon3 button{
+        padding: 15px 20px;
+    }
+
+    .icon3 p{
+        margin: 30px 0px 30px 40px;
+        font-size: 12px;
+    }
+
+    .icon2 li{
+        padding: 15px 70px;
+    }
+    .icon2 a{
+        font-size: 15px;
+    }
+
+    footer img{
+        width: 100%;
+    }
+
+    .icon{
+        margin-top: 40px;
+    }
+    
+    .icon ul{
+        padding: 30px 0 0 0;
+        gap: 30px;
+    }
+
+
+}
+
